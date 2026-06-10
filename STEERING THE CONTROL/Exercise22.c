@@ -6,7 +6,7 @@
 int main()
 {
     int m;
-
+    printf("Enter your marks");
     scanf("%d",&m);
 
     if(m>=90)
