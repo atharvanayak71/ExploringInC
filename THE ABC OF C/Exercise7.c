@@ -2,10 +2,16 @@
 //0905CS241063
 
 #include<stdio.h>
-int main(){
-    char ch = 291;
-    printf("%d %d %c\n", 2147483648, ch, ch); 
+
+int main()
+{
+    char ch = 127;
+
+    printf("Before overflow: %d\n", ch);
+
+    ch = ch + 1;
+
+    printf("After overflow: %d\n", ch);
+
     return 0;
 }
-
-//Overflow output
